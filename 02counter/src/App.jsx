@@ -13,7 +13,9 @@ function App() {
   }
 
   const remvalue = () => {
-    counter = counter - 1;
+    if (counter >= 1) {
+      counter = counter - 1;
+    }
     setCounter(counter)
   }
 
